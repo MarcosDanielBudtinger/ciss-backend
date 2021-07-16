@@ -36,7 +36,7 @@ Para buscar um funcionário pelo id
 
 Para buscar um funcionário por parametros
 - Temos como possibilidade o envio de parametros para busca mais refinada sendo eles: nome, sobrenome, email, numeroNis.
-Para isso basta informar o atributo exemplo: sobrenome seguido de um = e a informação que deseja enviar, tambem é possível
+- Para isso basta informar o atributo exemplo: sobrenome seguido de um = e a informação que deseja enviar, tambem é possível
 enviar mais de um paramêtro utilizando &, seguem exemplos abaixo.
 
 Busca pelo nome
@@ -61,8 +61,8 @@ Para atualizar um funcionario
 Verbo `PUT` 
 - http://localhost:8080/funcionarios/id 
 - exemplo: http://localhost:8080/funcionarios/1
-  para tal é necesário enviar um json no body do seguinte formato de exemplo:
-  `{
+- para tal é necesário enviar um json no body do seguinte formato de exemplo:
+- `{
     "nome": "nome do funcionari",
     "sobrenome": "sobrenome",
     "email": "email@email.com",
@@ -73,8 +73,8 @@ Para salvar um funcionário
 Verbo `POST` 
 - http://localhost:8080/funcionarios
 - exemplo: http://localhost:8080/funcionarios
-  para tal também se faz necessários mandarmos no body um json com a seguinte estrutura de exemplo:
-  `{
+- para tal também se faz necessários mandarmos no body um json com a seguinte estrutura de exemplo:
+- `{
     "nome": "nome do funcionari",
     "sobrenome": "sobrenome",
     "email": "email@email.com",
