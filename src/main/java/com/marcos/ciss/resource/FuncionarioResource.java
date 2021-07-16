@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("funcionarios")
-@CrossOrigin(origins = { "http://localhost:3000" })
+@CrossOrigin(origins = { "*" })
 public class FuncionarioResource {
 
     @Autowired
@@ -63,7 +63,6 @@ public class FuncionarioResource {
                 : ResponseEntity.notFound().build();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void removerFuncionario(@PathVariable Long id) {
