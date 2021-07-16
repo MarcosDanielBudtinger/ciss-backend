@@ -23,3 +23,8 @@ Das funcionalidades (Utilizando APIs):
 - Exclusão de um Funcionário
 - Atualização de um Funcionário
 - Listagem de um Funcionário
+
+### Endpoints
+
+####Para buscar todos os funcionários 
+- http://localhost:8080/funcionarios
