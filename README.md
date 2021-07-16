@@ -1,6 +1,6 @@
 # Projeto para fins de teste para CISS
 
-Projeto criado maven e spring boot
+Projeto backend em java com springboot
 
 ## Sobre o projeto
 
