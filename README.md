@@ -26,5 +26,58 @@ Das funcionalidades (Utilizando APIs):
 
 ### Endpoints
 
-####Para buscar todos os funcionários 
+Para buscar todos os funcionários 
+Verbo `GET` 
 - http://localhost:8080/funcionarios
+
+Para buscar um funcionário pelo id
+- http://localhost:8080/funcionarios/id 
+- exemplo: http://localhost:8080/funcionarios/1
+
+Para buscar um funcionário por parametros
+- Temos como possibilidade o envio de parametros para busca mais refinada sendo eles: nome, sobrenome, email, numeroNis.
+Para isso basta informar o atributo exemplo: sobrenome seguido de um = e a informação que deseja enviar, tambem é possível
+enviar mais de um paramêtro utilizando &, seguem exemplos abaixo.
+
+Busca pelo nome
+- http://localhost:8080/funcionarios?nome=nomeaqui
+- exemplo: http://localhost:8080/funcionarios?nome=marcos
+
+Buscar pelo sobrenome
+- http://localhost:8080/funcionarios?sobrenome=sobrenomeaqui
+- exemplo: http://localhost:8080/funcionarios?sobrenome=budtinger
+
+Busca composta por mais de um paramêtro
+- http://localhost:8080/funcionarios?sobrenome=sobrenomeaqui&email=emailaqui
+- exemplo: http://localhost:8080/funcionarios?nome=marcos&email=marcos.mdbbr@gmail.com
+
+
+Para remover um funcionário
+Verbo `DELETE` 
+- http://localhost:8080/funcionarios/id 
+- exemplo: http://localhost:8080/funcionarios/1
+
+Para atualizar um funcionario
+Verbo `PUT` 
+- http://localhost:8080/funcionarios/id 
+- exemplo: http://localhost:8080/funcionarios/1
+  para tal é necesário enviar um json no body do seguinte formato de exemplo:
+  `{
+    "nome": "nome do funcionari",
+    "sobrenome": "sobrenome",
+    "email": "email@email.com",
+    "numeroNis": "99403948761"
+  }`
+
+Para salvar um funcionário
+Verbo `POST` 
+- http://localhost:8080/funcionarios
+- exemplo: http://localhost:8080/funcionarios
+  para tal também se faz necessários mandarmos no body um json com a seguinte estrutura de exemplo:
+  `{
+    "nome": "nome do funcionari",
+    "sobrenome": "sobrenome",
+    "email": "email@email.com",
+    "numeroNis": "99403948761"
+  }`
+
