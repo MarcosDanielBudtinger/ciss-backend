@@ -34,8 +34,8 @@ Para buscar um funcionário pelo id
 - http://localhost:8080/funcionarios/id 
 - exemplo: http://localhost:8080/funcionarios/1
 
-Para buscar um funcionário por parametros
-- Temos como possibilidade o envio de parametros para busca mais refinada sendo eles: nome, sobrenome, email, numeroNis.
+Para buscar um funcionário por parâmetros
+- Temos como possibilidade o envio de parâmetros para busca mais refinada sendo eles: nome, sobrenome, email, numeroNis.
 - Para isso basta informar o atributo exemplo: sobrenome seguido de um = e a informação que deseja enviar, tambem é possível
 enviar mais de um paramêtro utilizando &, seguem exemplos abaixo.
 
@@ -47,7 +47,7 @@ Buscar pelo sobrenome
 - http://localhost:8080/funcionarios?sobrenome=sobrenomeaqui
 - exemplo: http://localhost:8080/funcionarios?sobrenome=budtinger
 
-Busca composta por mais de um paramêtro
+Busca composta por mais de um parâmetro
 - http://localhost:8080/funcionarios?sobrenome=sobrenomeaqui&email=emailaqui
 - exemplo: http://localhost:8080/funcionarios?nome=marcos&email=marcos.mdbbr@gmail.com
 
